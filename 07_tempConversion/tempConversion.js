@@ -3,7 +3,10 @@ const convertToCelsius = function (fahrenheitValue) {
   return Number(celsiusValue.toPrecision(3));
 };
 
-const convertToFahrenheit = function () {};
+const convertToFahrenheit = function (celsiusValue) {
+  const fahrenheitValue = celsiusValue * (9 / 5) + 32;
+  return Number(fahrenheitValue.toPrecision(3));
+};
 
 // Do not edit below this line
 module.exports = {
