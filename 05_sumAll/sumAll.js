@@ -5,11 +5,7 @@ const sumAll = function (start, end) {
     start >= 0 &&
     end >= 0
   ) {
-    if (start > end) {
-      const temp = start;
-      start = end;
-      end = temp;
-    }
+    if (start > end) [start, end] = [end, start];
     let sum = 0;
     for (let i = start; i <= end; i++) sum += i;
     return sum;
